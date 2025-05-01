@@ -13,7 +13,7 @@
         body {
             line-height: 1.6;
             color: #333;
-            background: #f5f5f5; /* New background color: light gray */
+            background: #f5f5f5; /* Light gray background */
         }
         header {
             background: #004aad;
@@ -107,19 +107,19 @@
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#resume">Resume</a></li>
+            <li><a href="#skills-expertise">Skills & Expertise</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
     <section id="home" class="hero">
-        <h2>Welcome to My Online Resume</h2>
-        <p>I am a dedicated professional with over 4 years of experience in Quality Management Systems for IVD-Medical Devices, specializing in ISO standards and regulatory compliance.</p>
+        <h2>Welcome to My Online Webpage</h2>
+        <p>I am a dedicated Quality Assurance Professional in MD/IVD Industry with over 4 years of experience in Quality Management Systems for IVD-Medical Devices, specializing in ISO standards and regulatory compliance.</p>
     </section>
     <section id="about" class="section">
         <h3>About Me</h3>
         <p>4+ years of experience in Quality Management Systems (QMS) within the IVD-Medical Device industry. Proficient in key standards and regulations, including ISO 13485, ISO 14971, ISO 9001, and IMDR, with comprehensive expertise in the overall QMS process, Quality Assurance, and regulatory requirements for IVD licensing and documentation (Manufacturing License, Test License, MSC, and FSC). My skills include the preparation and implementation of process-related documentation, such as SOPs, CAPA, Non-Conformance reports, Process Validation, Internal Audits, Temperature Mapping and Monitoring (using tools like Themoclient, Temprecord, and Smartsensors), Change Control, DQ, IQ, OQ, PQ, Risk Analysis, Risk Management, and Training Management (ISO 10015).</p>
     </section>
-    <section id="resume" class="section">
+    <section id="skills-expertise" class="section">
         <h3>Skills & Expertise</h3>
         <ul>
             <li>ISO 13485, ISO 14971, ISO 9001, IMDR compliance</li>
