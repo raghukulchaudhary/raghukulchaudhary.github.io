@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -13,6 +14,7 @@
         body {
             line-height: 1.6;
             color: #333;
+            background: #f5f5f5; /* New background color: light gray */
         }
         header {
             background: #004aad;
