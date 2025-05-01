@@ -3,27 +3,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raghukul Chaudhary - Online Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: Arial, sans-serif;
+            font-family: 'Open Sans', sans-serif;
         }
         body {
-            line-height: 1.6;
+            line-height: 1.8;
             color: #333;
             background: #f5f5f5; /* Light gray background */
+            font-smooth: auto;
+            -webkit-font-smoothing: antialiased;
         }
         header {
             background: #004aad;
             color: white;
-            padding: 1rem;
+            padding: 1.5rem;
             text-align: center;
         }
         header h1 {
+            font-family: 'Roboto', sans-serif;
             font-size: 2.5rem;
-            margin-bottom: 0.5rem;
+            font-weight: 700;
+            margin: 0;
+            padding-bottom: 0;
+            text-decoration: none; /* Remove underline */
+            border: none; /* Remove any border */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle shadow */
         }
         nav {
             background: #f4f4f4;
@@ -33,28 +43,40 @@
             list-style: none;
             display: flex;
             justify-content: center;
-            gap: 2rem;
+            align-items: center;
+            gap: 1rem;
+        }
+        nav li {
+            flex: 1;
+            max-width: 150px;
+            text-align: center;
+            padding: 0.5rem;
         }
         nav a {
             text-decoration: none;
             color: #004aad;
-            font-weight: bold;
+            font-weight: 600;
+            display: block;
         }
         nav a:hover {
             color: #007bff;
         }
         .section {
-            padding: 2rem;
+            padding: 2.5rem;
             max-width: 1000px;
             margin: 0 auto;
         }
         .section h3 {
+            font-family: 'Roboto', sans-serif;
             font-size: 1.8rem;
+            font-weight: 700;
             color: #004aad;
             margin-bottom: 1rem;
         }
         .section h4 {
+            font-family: 'Roboto', sans-serif;
             font-size: 1.4rem;
+            font-weight: 700;
             margin-bottom: 0.5rem;
         }
         .section p, .section ul {
@@ -68,6 +90,24 @@
         .experience-item {
             margin-bottom: 2rem;
         }
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.5rem;
+        }
+        .contact-item i {
+            font-size: 20px;
+            color: #004aad;
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+        .contact-item a, .contact-item span {
+            color: #004aad;
+            text-decoration: none;
+        }
+        .contact-item a:hover {
+            color: #007bff;
+        }
         footer {
             background: #004aad;
             color: white;
@@ -80,10 +120,17 @@
         @media (max-width: 768px) {
             nav ul {
                 flex-direction: column;
-                gap: 1rem;
+                gap: 0.5rem;
+            }
+            nav li {
+                max-width: 100%;
+                padding: 0.5rem;
             }
             header h1 {
                 font-size: 1.8rem;
+            }
+            .section {
+                padding: 1.5rem;
             }
         }
     </style>
@@ -101,11 +148,11 @@
         </ul>
     </nav>
     <section id="about" class="section">
-        <h3>About Me</h3>
+        <h3>About Me:</h3>
         <p>4+ years of experience in Quality Management Systems (QMS) within the IVD-Medical Device industry. Proficient in key standards and regulations, including ISO 13485, ISO 14971, ISO 9001, and IMDR, with comprehensive expertise in the overall QMS process, Quality Assurance, and regulatory requirements for IVD licensing and documentation (Manufacturing License, Test License, MSC, and FSC). My skills include the preparation and implementation of process-related documentation, such as SOPs, CAPA, Non-Conformance reports, Process Validation, Internal Audits, Temperature Mapping and Monitoring (using tools like Themoclient, Temprecord, and Smartsensors), Change Control, DQ, IQ, OQ, PQ, Risk Analysis, Risk Management, and Training Management (ISO 10015).</p>
     </section>
     <section id="experience" class="section">
-        <h3>Experience</h3>
+        <h3>Experience:</h3>
         <div class="experience-item">
             <h4>Quality Assurance Executive - Nulife</h4>
             <p>Jul 2022 - Mar 2025 · 2 yrs 9 mos · Full-time</p>
@@ -148,7 +195,7 @@
         </div>
     </section>
     <section id="skills-expertise" class="section">
-        <h3>Skills & Expertise</h3>
+        <h3>Skills & Expertise:</h3>
         <ul>
             <li>ISO 13485, ISO 14971, ISO 9001, IMDR compliance</li>
             <li>Quality Assurance and regulatory documentation</li>
@@ -163,9 +210,19 @@
         </ul>
     </section>
     <section id="contact" class="section">
-        <h3>Contact</h3>
-        <p>Email: raghukulchaudhary@gmail.com</p>
-        <p>LinkedIn: <a href="https://in.linkedin.com/in/raghukulchaudhary" target="_blank">https://in.linkedin.com/in/raghukulchaudhary</a></p>
+        <h3>Contact:</h3>
+        <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:raghukulchaudhary@gmail.com">raghukulchaudhary@gmail.com</a>
+        </div>
+        <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <span>+91-7020067460</span>
+        </div>
+        <div class="contact-item">
+            <i class="fab fa-linkedin"></i>
+            <a href="https://in.linkedin.com/in/raghukulchaudhary" target="_blank">linkedin.com/in/raghukulchaudhary</a>
+        </div>
     </section>
     <footer>
         <p>© 2025 Raghukul Chaudhary. All rights reserved.</p>
