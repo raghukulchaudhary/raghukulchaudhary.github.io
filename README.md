@@ -24,16 +24,21 @@
             color: white;
             padding: 1.5rem;
             text-align: center;
+            border-bottom: none; /* Ensure no border */
+            box-shadow: none; /* Ensure no shadow */
         }
         header h1 {
             font-family: 'Roboto', sans-serif;
             font-size: 2.5rem;
             font-weight: 700;
             margin: 0;
-            padding-bottom: 0;
+            padding: 1rem 0;
             text-decoration: none; /* Remove underline */
             border: none; /* Remove any border */
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            outline: none; /* Remove outline */
+            box-shadow: none; /* Remove shadow */
+            background: transparent; /* Ensure no background */
+            display: block; /* Control layout */
         }
         nav {
             background: #f4f4f4;
