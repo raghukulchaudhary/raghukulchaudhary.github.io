@@ -1,3 +1,4 @@
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -178,8 +179,8 @@
             vertical-align: middle;
         }
         .contact-item a, .contact-item span {
-            color: #4B0082; /* Changed to dark plum */
-            text-decoration: none;
+            color: #4B0082; /* Dark plum */
+            text-decoration: confederation;
         }
         .contact-item a:hover {
             color: #007bff;
@@ -302,16 +303,20 @@
             <h3>Skills & Expertise:</h3>
         </div>
         <ul>
-            <li>ISO 13485, ISO 14971, ISO 9001, IMDR compliance</li>
-            <li>Quality Assurance and regulatory documentation</li>
-            <li>SOPs, CAPA, Non-Conformance Handling, Complaint Handling</li>
-            <li>Process Validation, Internal Audits</li>
+            <li>Expert in ISO:13485, ISO:14971, ISO 9001 and overall IMDR compliance</li>
+            <li>Quality Assurance and Regulatory Documentation</li>
+            <li>Change Control Management, PDLM and Risk Analysis</li>
+            <li>Product Hold, FCA and Recalls</li>
+            <li>Initiate, Handle Non-Conformance and CAPA</li>
+            <li>7-QC Tools & Root Cause Analysis (RCA)</li>
+            <li>Complaint Handling Process</li>
+            <li>Process Validation</li>
+            <li>Internal Audits and Management Review</li>
+            <li>Risk Management</li>
             <li>Temperature Mapping (Themoclient, Temprecord, Smartsensors)</li>
-            <li>Risk Analysis, Change Control Management, DQ, IQ, OQ, PQ</li>
             <li>Training Management (ISO 10015)</li>
-            <li>7QC Tools, Root Cause Analysis (RCA)</li>
-            <li>SAP ERP, TrackWise</li>
-            <li>Handling Deviation</li>
+            <li>Handling Deviations (Planned and Unplanned)</li>
+            <li>SAP ERP, TrackWise, QSEP, TcU</li>
         </ul>
     </section>
     <section id="contact" class="section">
@@ -336,3 +341,4 @@
         <p>© 2025 Raghukul Chaudhary. All rights reserved.</p>
     </footer>
 </body>
+</html>
