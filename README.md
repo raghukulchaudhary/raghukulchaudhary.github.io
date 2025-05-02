@@ -15,17 +15,16 @@
         body {
             line-height: 1.8;
             color: #333;
-            background: #f5f5f5; /* Light gray background */
-            font-smooth: auto;
-            -webkit-font-smoothing: antialiased;
+            background: #f5f5f5;
         }
         header {
-            background: #004aad;
+            background: #2c3e50; /* New dark slate background */
             color: white;
             padding: 1.5rem;
             text-align: center;
-            border-bottom: none; /* Ensure no border */
-            box-shadow: none; /* Ensure no shadow */
+            border: none !important;
+            box-shadow: none;
+            line-height: 1;
         }
         header h1 {
             font-family: 'Roboto', sans-serif;
@@ -33,12 +32,15 @@
             font-weight: 700;
             margin: 0;
             padding: 1rem 0;
-            text-decoration: none; /* Remove underline */
-            border: none; /* Remove any border */
-            outline: none; /* Remove outline */
-            box-shadow: none; /* Remove shadow */
-            background: transparent; /* Ensure no background */
-            display: block; /* Control layout */
+            text-decoration: none !important;
+            border: none !important;
+            outline: none;
+            box-shadow: none;
+            background: transparent;
+            display: block;
+        }
+        header h1::before, header h1::after {
+            content: none !important; /* Remove pseudo-elements */
         }
         nav {
             background: #f4f4f4;
@@ -114,7 +116,7 @@
             color: #007bff;
         }
         footer {
-            background: #004aad;
+            background: #2c3e50;
             color: white;
             text-align: center;
             padding: 1rem;
