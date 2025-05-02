@@ -107,8 +107,62 @@
             list-style: disc;
             padding-left: 2rem;
         }
+        .timeline {
+            position: relative;
+            padding-left: 3rem;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 1rem;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: linear-gradient(to bottom, #854d0e, #d97706);
+        }
         .experience-item {
+            position: relative;
             margin-bottom: 2rem;
+            padding: 1rem;
+            background: linear-gradient(to right, #ffffff, #e6f0fa);
+            border-radius: 6px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .experience-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        }
+        .experience-item::before {
+            content: '\f058'; /* Checkmark icon */
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            position: absolute;
+            left: -2.25rem;
+            top: 0.5rem;
+            width: 24px;
+            height: 24px;
+            background: #854d0e;
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            animation: pulse 2s infinite;
+        }
+        .date-badge {
+            display: inline-block;
+            background: #854d0e;
+            color: #fff;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
         }
         .contact-item {
             display: flex;
@@ -152,6 +206,22 @@
             .section {
                 padding: 1.5rem;
             }
+            .timeline {
+                padding-left: 2rem;
+            }
+            .timeline::before {
+                left: 0.5rem;
+                width: 3px;
+            }
+            .experience-item {
+                padding: 0.75rem;
+            }
+            .experience-item::before {
+                left: -1.75rem;
+                width: 20px;
+                height: 20px;
+                font-size: 10px;
+            }
         }
     </style>
 </head>
@@ -179,45 +249,49 @@
             <i class="fas fa-briefcase"></i>
             <h3>Experience:</h3>
         </div>
-        <div class="experience-item">
-            <h4>Quality Assurance Executive - Nulife</h4>
-            <p>Jul 2022 - Mar 2025 · 2 yrs 9 mos · Full-time</p>
-            <p>Noida, Uttar Pradesh, India · On-site</p>
-            <ul>
-                <li>Implemented and ensured compliance with the ISO 13485 standard.</li>
-                <li>Meticulously maintained complaint and nonconformance processing through records and tracking systems, including root cause analysis and corrective actions.</li>
-                <li>Documented quality assurance activities through internal reporting and audits.</li>
-                <li>Identified training needs and implemented actions to ensure company-wide compliance.</li>
-                <li>Ensured all devices were calibrated according to the established schedule.</li>
-                <li>Met customer expectations aligned with company objectives and monthly quality goals.</li>
-                <li>Communicated inspection results, proposed corrective actions, and wrote reports documenting product deficiencies and errors.</li>
-                <li>Conducted risk assessments and implemented mitigation strategies to ensure product safety and compliance with regulatory requirements.</li>
-                <li>Collaborated with cross-functional teams to integrate quality management processes into product development and manufacturing workflows.</li>
-                <li>Monitored and evaluated supplier performance to ensure raw materials and components meet quality specifications.</li>
-                <li>Developed and updated standard operating procedures (SOPs) to reflect best practices and maintained consistency in quality processes.</li>
-                <li>Analyzed quality data trends to identify opportunities for continuous improvement and process optimization.</li>
-                <li>Managed and documented change control processes to ensure all modifications to products, processes, or systems were evaluated, approved, and implemented in accordance with quality and regulatory standards.</li>
-                <li>Promptly reported problems or concerns to quality assurance head and senior management.</li>
-            </ul>
-        </div>
-        <div class="experience-item">
-            <h4>Quality Assurance Executive - Astam Diagno</h4>
-            <p>Mar 2021 - Jul 2022 · 1 yr 5 mos</p>
-            <p>Rajasthan, India</p>
-            <ul>
-                <li>Ensured effective implementation of SOPs and other applicable regulations across all areas.</li>
-                <li>Managed customer complaints, nonconforming cases, and change control, including evaluating the effectiveness of corrective and preventive actions (CAPA).</li>
-                <li>Ensured risk management is adequately implemented across all key processes.</li>
-                <li>Oversaw the validation, qualification, and calibration of equipment and instruments used for manufacturing, inspection, measuring, monitoring, and testing.</li>
-                <li>Prepared, compiled, and presented Management Review Meeting (MRM) data.</li>
-                <li>Prepared technical documents, such as Site Master Files (SMF) and Drug Master Files (DMF), for licensing purposes.</li>
-                <li>Ensured the effective implementation of the quality management system.</li>
-                <li>Assured quality at every stage of the manufacturing process.</li>
-                <li>Ensured compliance with national standards.</li>
-                <li>Oversaw customer feedback and post-market surveillance of IVD products.</li>
-                <li>Managed internal and external audits (surveillance).</li>
-                <li>Ensured training is conducted according to the established training plan.</li>
-            </ul>
+        <div class="timeline">
+            <div class="experience-item">
+                <div class="date-badge">Jul 2022 - Mar 2025</div>
+                <h4>Quality Assurance Executive - Nulife</h4>
+                <p>2 yrs 9 mos · Full-time</p>
+                <p>Noida, Uttar Pradesh, India · On-site</p>
+                <ul>
+                    <li>Implemented and ensured compliance with the ISO 13485 standard.</li>
+                    <li>Meticulously maintained complaint and nonconformance processing through records and tracking systems, including root cause analysis and corrective actions.</li>
+                    <li>Documented quality assurance activities through internal reporting and audits.</li>
+                    <li>Identified training needs and implemented actions to ensure company-wide compliance.</li>
+                    <li>Ensured all devices were calibrated according to the established schedule.</li>
+                    <li>Met customer expectations aligned with company objectives and monthly quality goals.</li>
+                    <li>Communicated inspection results, proposed corrective actions, and wrote reports documenting product deficiencies and errors.</li>
+                    <li>Conducted risk assessments and implemented mitigation strategies to ensure product safety and compliance with regulatory requirements.</li>
+                    <li>Collaborated with cross-functional teams to integrate quality management processes into product development and manufacturing workflows.</li>
+                    <li>Monitored and evaluated supplier performance to ensure raw materials and components meet quality specifications.</li>
+                    <li>Developed and updated standard operating procedures (SOPs) to reflect best practices and maintained consistency in quality processes.</li>
+                    <li>Analyzed quality data trends to identify opportunities for continuous improvement and process optimization.</li>
+                    <li>Managed and documented change control processes to ensure all modifications to products, processes, or systems were evaluated, approved, and implemented in accordance with quality and regulatory standards.</li>
+                    <li>Promptly reported problems or concerns to quality assurance head and senior management.</li>
+                </ul>
+            </div>
+            <div class="experience-item">
+                <div class="date-badge">Mar 2021 - Jul 2022</div>
+                <h4>Quality Assurance Executive - Astam Diagno</h4>
+                <p>1 yr 5 mos</p>
+                <p>Rajasthan, India</p>
+                <ul>
+                    <li>Ensured effective implementation of SOPs and other applicable regulations across all areas.</li>
+                    <li>Managed customer complaints, nonconforming cases, and change control, including evaluating the effectiveness of corrective and preventive actions (CAPA).</li>
+                    <li>Ensured risk management is adequately implemented across all key processes.</li>
+                    <li>Oversaw the validation, qualification, and calibration of equipment and instruments used for manufacturing, inspection, measuring, monitoring, and testing.</li>
+                    <li>Prepared, compiled, and presented Management Review Meeting (MRM) data.</li>
+                    <li>Prepared technical documents, such as Site Master Files (SMF) and Drug Master Files (DMF), for licensing purposes.</li>
+                    <li>Ensured the effective implementation of the quality management system.</li>
+                    <li>Assured quality at every stage of the manufacturing process.</li>
+                    <li>Ensured compliance with national standards.</li>
+                    <li>Oversaw customer feedback and post-market surveillance of IVD products.</li>
+                    <li>Managed internal and external audits (surveillance).</li>
+                    <li>Ensured training is conducted according to the established training plan.</li>
+                </ul>
+            </div>
         </div>
     </section>
     <section id="skills-expertise" class="section">
