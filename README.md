@@ -37,7 +37,6 @@
             outline: none;
             box-shadow: none;
             background: transparent;
-            background-clip: content-box;
             display: block;
         }
         header h1::before, header h1::after {
@@ -62,17 +61,20 @@
         }
         nav a {
             text-decoration: none;
-            color: #008080; /* Teal color for nav links */
+            color: #008080;
             font-weight: 600;
             display: block;
         }
         nav a:hover {
-            color: #00a3a3; /* Lighter teal on hover */
+            color: #00a3a3;
         }
         .section {
             padding: 2.5rem;
             max-width: 1000px;
             margin: 0 auto;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
         .section-header {
             display: flex;
@@ -155,7 +157,7 @@
 </head>
 <body>
     <header>
-        <h1>Quality Management Systems Expert in ISO:13485 MD-IVD</h1>
+        <h1>Quality Management System Expert in ISO:13485 (Medical Devices & IVD)</h1>
     </header>
     <nav>
         <ul>
@@ -226,7 +228,7 @@
         <ul>
             <li>ISO 13485, ISO 14971, ISO 9001, IMDR compliance</li>
             <li>Quality Assurance and regulatory documentation</li>
-            <li>SOPs, CAPA, Non-Conformance Handling</li>
+            <li>SOPs, CAPA, Non-Conformance Handling, Complaint Handling</li>
             <li>Process Validation, Internal Audits</li>
             <li>Temperature Mapping (Themoclient, Temprecord, Smartsensors)</li>
             <li>Risk Analysis, Change Control Management, DQ, IQ, OQ, PQ</li>
