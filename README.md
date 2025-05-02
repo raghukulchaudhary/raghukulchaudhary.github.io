@@ -18,7 +18,7 @@
             background: #f5f5f5;
         }
         header {
-            background: #2c3e50; /* New dark slate background */
+            background: #2c3e50;
             color: white;
             padding: 1.5rem;
             text-align: center;
@@ -37,10 +37,11 @@
             outline: none;
             box-shadow: none;
             background: transparent;
+            background-clip: content-box;
             display: block;
         }
         header h1::before, header h1::after {
-            content: none !important; /* Remove pseudo-elements */
+            content: none !important;
         }
         nav {
             background: #f4f4f4;
@@ -61,24 +62,34 @@
         }
         nav a {
             text-decoration: none;
-            color: #004aad;
+            color: #008080; /* Teal color for nav links */
             font-weight: 600;
             display: block;
         }
         nav a:hover {
-            color: #007bff;
+            color: #00a3a3; /* Lighter teal on hover */
         }
         .section {
             padding: 2.5rem;
             max-width: 1000px;
             margin: 0 auto;
         }
+        .section-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        .section-header i {
+            font-size: 20px;
+            color: #004aad;
+            margin-right: 8px;
+            vertical-align: middle;
+        }
         .section h3 {
             font-family: 'Roboto', sans-serif;
             font-size: 1.8rem;
             font-weight: 700;
             color: #004aad;
-            margin-bottom: 1rem;
         }
         .section h4 {
             font-family: 'Roboto', sans-serif;
@@ -155,11 +166,17 @@
         </ul>
     </nav>
     <section id="about" class="section">
-        <h3>About Me:</h3>
+        <div class="section-header">
+            <i class="fas fa-user"></i>
+            <h3>About Me:</h3>
+        </div>
         <p>4+ years of experience in Quality Management Systems (QMS) within the IVD-Medical Device industry. Proficient in key standards and regulations, including ISO 13485, ISO 14971, ISO 9001, and IMDR, with comprehensive expertise in the overall QMS process, Quality Assurance, and regulatory requirements for IVD licensing and documentation (Manufacturing License, Test License, MSC, and FSC). My skills include the preparation and implementation of process-related documentation, such as SOPs, CAPA, Non-Conformance reports, Process Validation, Internal Audits, Temperature Mapping and Monitoring (using tools like Themoclient, Temprecord, and Smartsensors), Change Control, DQ, IQ, OQ, PQ, Risk Analysis, Risk Management, and Training Management (ISO 10015).</p>
     </section>
     <section id="experience" class="section">
-        <h3>Experience:</h3>
+        <div class="section-header">
+            <i class="fas fa-briefcase"></i>
+            <h3>Experience:</h3>
+        </div>
         <div class="experience-item">
             <h4>Quality Assurance Executive - Nulife</h4>
             <p>Jul 2022 - Mar 2025 · 2 yrs 9 mos · Full-time</p>
@@ -202,7 +219,10 @@
         </div>
     </section>
     <section id="skills-expertise" class="section">
-        <h3>Skills & Expertise:</h3>
+        <div class="section-header">
+            <i class="fas fa-tools"></i>
+            <h3>Skills & Expertise:</h3>
+        </div>
         <ul>
             <li>ISO 13485, ISO 14971, ISO 9001, IMDR compliance</li>
             <li>Quality Assurance and regulatory documentation</li>
@@ -217,7 +237,10 @@
         </ul>
     </section>
     <section id="contact" class="section">
-        <h3>Contact:</h3>
+        <div class="section-header">
+            <i class="fas fa-address-card"></i>
+            <h3>Contact:</h3>
+        </div>
         <div class="contact-item">
             <i class="fas fa-envelope"></i>
             <a href="mailto:raghukulchaudhary@gmail.com">raghukulchaudhary@gmail.com</a>
