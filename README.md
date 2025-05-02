@@ -1,4 +1,3 @@
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -107,6 +106,9 @@
             list-style: disc;
             padding-left: 2rem;
         }
+        #about p {
+            text-align: justify;
+        }
         .timeline {
             position: relative;
             padding-left: 3rem;
@@ -176,7 +178,7 @@
             vertical-align: middle;
         }
         .contact-item a, .contact-item span {
-            color: #004aad;
+            color: #4B0082; /* Changed to dark plum */
             text-decoration: none;
         }
         .contact-item a:hover {
