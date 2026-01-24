@@ -2,12 +2,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Raghukul Chaudhary - QMS & QA Professional</title>
+    <title>Raghukul Chaudhary - Quality Assurance Analyst Portfolio</title>
     
     <!-- Fonts and Icons -->
     <link href="https://fonts.googleapis.com" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com">
     
+    <!-- LinkedIn Badge Script -->
+    <script src="https://platform.linkedin.com" async defer type="text/javascript"></script>
+
     <style>
         :root {
             --primary-bg: #2c3e50;
@@ -18,7 +21,7 @@
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Open Sans', sans-serif; }
-        body { line-height: 1.6; color: var(--text-dark); background: #f5f5f5; }
+        body { line-height: 1.6; color: var(--text-dark); background: #f5f5f5; scroll-behavior: smooth; }
 
         header {
             background: var(--primary-bg);
@@ -30,7 +33,6 @@
             font-family: 'Roboto', sans-serif;
             font-size: 2.8rem;
             margin-bottom: 0.5rem;
-            letter-spacing: 1px;
         }
         header p {
             font-size: 1.2rem;
@@ -65,13 +67,14 @@
             border-left: 3px solid var(--accent-gold);
         }
         .exp-title-row { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; margin-bottom: 0.5rem; }
-        .company-name { font-weight: 700; color: var(--accent-blue); font-size: 1.3rem; }
+        .company-name { font-weight: 700; color: var(--accent-blue); font-size: 1.4rem; }
+        .role-title { display: block; font-weight: 700; color: #d97706; margin-bottom: 0.2rem; font-size: 1.1rem; }
         .date-badge { background: var(--accent-gold); color: var(--white); padding: 0.2rem 0.8rem; border-radius: 4px; font-size: 0.85rem; font-weight: 600; }
-        .location { font-style: italic; color: #666; display: block; margin-bottom: 1rem; }
+        .location { font-style: italic; color: #666; display: block; margin-bottom: 1rem; font-size: 0.9rem; }
         
         .job-list { list-style: none; }
-        .job-list li { position: relative; padding-left: 1.5rem; margin-bottom: 0.8rem; color: #444; }
-        .job-list li::before { content: "\f058"; font-family: "Font Awesome 6 Free"; font-weight: 900; position: absolute; left: 0; color: var(--accent-gold); }
+        .job-list li { position: relative; padding-left: 1.5rem; margin-bottom: 0.6rem; color: #444; font-size: 0.95rem; }
+        .job-list li::before { content: "\f058"; font-family: "Font Awesome 6 Free"; font-weight: 900; position: absolute; left: 0; color: var(--accent-gold); font-size: 0.9rem; }
 
         /* Contact Grid */
         .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 1rem; }
@@ -80,6 +83,8 @@
         .contact-card i { font-size: 1.4rem; color: var(--accent-blue); width: 30px; text-align: center; }
         .contact-info-text span { display: block; font-size: 0.8rem; color: #777; text-transform: uppercase; font-weight: 700; }
         .contact-info-text p { font-weight: 600; font-size: 1rem; }
+
+        .badge-container { display: flex; justify-content: center; margin-top: 2rem; padding-top: 2rem; border-top: 1px solid #eee; }
 
         @media (max-width: 768px) {
             header h1 { font-size: 2rem; }
@@ -92,7 +97,7 @@
 
     <header>
         <h1>Raghukul Chaudhary</h1>
-        <p>Quality Management System Expert | ISO:13485 (Medical Devices & IVD)</p>
+        <p>Quality Assurance Analyst | QMS Expert | ISO:13485 Specialists</p>
     </header>
 
     <nav>
@@ -127,23 +132,65 @@
                 <h3>Work Experience</h3>
             </div>
 
+            <!-- Vantive Healthcare -->
             <div class="experience-item">
                 <div class="exp-title-row">
-                    <span class="company-name">Vantive</span>
+                    <span class="company-name">Vantive Healthcare</span>
                     <span class="date-badge">March 2025 - Present</span>
                 </div>
+                <span class="role-title">Quality Assurance Analyst</span>
                 <span class="location"><i class="fas fa-map-marker-alt"></i> Gurugram, India</span>
                 <ul class="job-list">
-                    <li>Create and manage quality documents using <strong>TcU (Product Lifecycle Management Software)</strong> to ensure compliance and accuracy in product development and regulatory processes for kidney care therapies.</li>
-                    <li>Execute change control processes in <strong>TrackWise</strong>, ensuring all product, process, or system modifications are evaluated, approved, and documented per regulatory and quality standards.</li>
-                    <li>Handle customer complaints from South Asia in TrackWise. Perform due diligence on complaints and track the complaint sample until it reaches the respective manufacturing site located across the globe.</li>
-                    <li>Initiate Non-Conformance (NC) reports in TrackWise, identifying and documenting deviations from quality standards, and facilitate resolution to maintain product and process integrity.</li>
-                    <li>Manage Corrective and Preventive Action (CAPA) processes, developing and implementing action plans to address root causes of non-conformances and prevent recurrence, enhancing quality system effectiveness.</li>
-                    <li>Support internal audits using TrackWise, documenting findings and proposing corrective actions to ensure compliance with ISO 13485 and other applicable regulatory standards.</li>
-                    <li>Coordinate product holds, identifying and isolating non-conforming products to prevent distribution and uphold quality standards for kidney care products within the India region.</li>
-                    <li>Support in preparation of aging reports for complaints across the APAC region.</li>
-                    <li>Ensure adherence to Vantive’s quality management system (QMS) and ISO 13485 through meticulous record-keeping, process monitoring, and collaboration with regional and cross-functional teams.</li>
-                    <li>Contribute to developing and updating standard operating procedures (SOPs).</li>
+                    <li>Create and manage quality documents using <strong>TcU (Product Lifecycle Management Software)</strong> to ensure compliance and accuracy in product development and regulatory processes.</li>
+                    <li>Execute change control processes in <strong>TrackWise</strong>, ensuring all modifications are evaluated, approved, and documented per regulatory standards.</li>
+                    <li>Handle customer complaints from South Asia in TrackWise; perform due diligence and track complaint samples globally.</li>
+                    <li>Initiate Non-Conformance (NC) reports in TrackWise and facilitate resolutions to maintain product integrity.</li>
+                    <li>Manage <strong>CAPA processes</strong>, developing and implementing action plans to address root causes and prevent recurrence.</li>
+                    <li>Support internal audits using TrackWise to ensure compliance with ISO 13485 standards.</li>
+                    <li>Coordinate product holds, isolating non-conforming products to uphold quality standards within the India region.</li>
+                    <li>Prepare aging reports for complaints across the APAC region and update SOPs as required.</li>
+                </ul>
+            </div>
+
+            <!-- Nulife -->
+            <div class="experience-item">
+                <div class="exp-title-row">
+                    <span class="company-name">Nulife</span>
+                    <span class="date-badge">July 2022 - March 2025</span>
+                </div>
+                <span class="role-title">Quality Management Specialist</span>
+                <span class="location"><i class="fas fa-map-marker-alt"></i> Noida, India (2 Years, 9 months)</span>
+                <ul class="job-list">
+                    <li>Implemented and ensured compliance with the <strong>ISO 13485</strong> standard.</li>
+                    <li>Maintained complaint and nonconformance processing through records and tracking systems, including root cause analysis and corrective actions.</li>
+                    <li>Documented quality assurance activities through internal reporting and audits.</li>
+                    <li>Identified training needs and implemented actions to ensure company-wide compliance.</li>
+                    <li>Ensured all devices were calibrated according to the established schedule.</li>
+                    <li>Conducted risk assessments and implemented mitigation strategies to ensure product safety and regulatory compliance.</li>
+                    <li>Collaborated with cross-functional teams to integrate QMS processes into manufacturing workflows.</li>
+                    <li>Monitored and evaluated supplier performance to ensure raw materials meet quality specifications.</li>
+                    <li>Managed change control processes for products, processes, or systems in accordance with quality standards.</li>
+                    <li>Promptly reported problems or concerns to the Quality Assurance Head and Senior Management.</li>
+                </ul>
+            </div>
+
+            <!-- Astam Diagnostics -->
+            <div class="experience-item">
+                <div class="exp-title-row">
+                    <span class="company-name">Astam Diagnostics Pvt. Ltd.</span>
+                    <span class="date-badge">March 2021 - July 2022</span>
+                </div>
+                <span class="role-title">Quality Assurance Executive</span>
+                <span class="location"><i class="fas fa-map-marker-alt"></i> Rajasthan, India (1 Year, 5 months)</span>
+                <ul class="job-list">
+                    <li>Ensured effective implementation of SOPs and other applicable regulations across all areas.</li>
+                    <li>Managed customer complaints, nonconforming cases, and change control, evaluating CAPA effectiveness.</li>
+                    <li>Oversaw the validation, qualification, and calibration of equipment and instruments for manufacturing and testing.</li>
+                    <li>Prepared, compiled, and presented <strong>Management Review Meeting (MRM) data</strong>.</li>
+                    <li>Prepared technical documents (Site Master Files and Drug Master Files) for licensing purposes.</li>
+                    <li>Assured quality at every stage of the manufacturing process and ensured compliance with national standards.</li>
+                    <li>Oversaw customer feedback and post-market surveillance of <strong>IVD products</strong>.</li>
+                    <li>Managed internal and external surveillance audits and conducted training according to the established plan.</li>
                 </ul>
             </div>
         </section>
@@ -162,28 +209,34 @@
                         <p>raghukulchaudhary@gmail.com</p>
                     </div>
                 </a>
-                <a href="https://www.linkedin.com/in/raghukulchaudhary/" target="_blank" class="contact-card">
+                <a href="https://www.linkedin.com" target="_blank" class="contact-card">
                     <i class="fab fa-linkedin"></i>
                     <div class="contact-info-text">
-                        <span>LinkedIn</span>
+                        <span>LinkedIn Profile</span>
                         <p>In/raghukulchaudhary</p>
                     </div>
                 </a>
                 <div class="contact-card">
                     <i class="fas fa-phone"></i>
                     <div class="contact-info-text">
-                        <span>Mobile</span>
+                        <span>Mobile Number</span>
                         <p>+91-702-006-7460</p>
                     </div>
+                </div>
+            </div>
+
+            <!-- LinkedIn Badge Integration -->
+            <div class="badge-container">
+                <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="raghukulchaudhary" data-version="v1">
+                    <a class="badge-base__link LI-simple-link" href="https://in.linkedin.com">Raghukul Chaudhary</a>
                 </div>
             </div>
         </section>
     </main>
 
     <footer style="text-align: center; padding: 2rem; color: #888; font-size: 0.85rem;">
-        &copy; 2026 Raghukul Chaudhary | Professional QMS Portfolio
+        &copy; 2026 Raghukul Chaudhary | Quality Assurance Professional Portfolio
     </footer>
 
 </body>
 </html>
-
