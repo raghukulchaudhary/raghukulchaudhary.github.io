@@ -1,15 +1,13 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Raghukul Chaudhary - QMS Expert & ISO:13485 Consultant</title>
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Professional resume of Raghukul Chaudhary, a Quality Management System Expert specializing in ISO:13485 for Medical Devices and IVD.">
-    <meta name="keywords" content="QMS, ISO 13485, Medical Devices, IVD, Quality Assurance, Raghukul Chaudhary">
+    <title>Raghukul Chaudhary - QMS & QA Professional</title>
     
+    <!-- Fonts and Icons -->
     <link href="https://fonts.googleapis.com" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
     <style>
         :root {
             --primary-bg: #2c3e50;
@@ -22,17 +20,17 @@
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Open Sans', sans-serif; }
         body { line-height: 1.6; color: var(--text-dark); background: #f5f5f5; }
 
-        /* Semantic Header */
         header {
             background: var(--primary-bg);
             color: var(--white);
-            padding: 2.5rem 1.5rem;
+            padding: 3rem 1.5rem;
             text-align: center;
         }
         header h1 {
             font-family: 'Roboto', sans-serif;
             font-size: 2.8rem;
             margin-bottom: 0.5rem;
+            letter-spacing: 1px;
         }
         header p {
             font-size: 1.2rem;
@@ -40,56 +38,53 @@
             font-weight: 600;
         }
 
-        nav { background: #eef2f3; padding: 1rem; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        nav { background: #ffffff; padding: 1rem; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
         nav ul { list-style: none; display: flex; justify-content: center; gap: 2rem; }
-        nav a { text-decoration: none; color: var(--accent-blue); font-weight: 700; transition: 0.3s; }
-        nav a:hover { color: #d97706; }
+        nav a { text-decoration: none; color: var(--accent-blue); font-weight: 700; transition: 0.3s; font-size: 0.9rem; text-transform: uppercase; }
+        nav a:hover { color: var(--accent-gold); }
 
         .container { max-width: 1000px; margin: 2rem auto; padding: 0 1rem; }
+        
         .section {
             padding: 2.5rem;
             background: var(--white);
             border-radius: 12px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
             margin-bottom: 2rem;
         }
-        .section-header { display: flex; align-items: center; margin-bottom: 1.5rem; border-bottom: 2px solid #eee; padding-bottom: 0.5rem; }
+        .section-header { display: flex; align-items: center; margin-bottom: 1.5rem; border-bottom: 2px solid #eee; padding-bottom: 0.8rem; }
         .section-header i { font-size: 1.5rem; color: var(--accent-blue); margin-right: 12px; }
         .section h3 { font-family: 'Roboto', sans-serif; font-size: 1.8rem; color: var(--accent-blue); }
 
-        /* Experience Timeline */
-        .timeline { position: relative; padding-left: 2.5rem; border-left: 4px solid var(--accent-gold); }
-        .experience-item {
-            position: relative;
-            margin-bottom: 2.5rem;
-            padding: 1.5rem;
-            background: #f9fbfd;
-            border-radius: 8px;
-            transition: 0.3s;
-        }
-        .experience-item:hover { transform: translateX(10px); box-shadow: 5px 5px 15px rgba(0,0,0,0.1); }
-        .experience-item::before {
-            content: '\f058'; font-family: 'Font Awesome 6 Free'; font-weight: 900;
-            position: absolute; left: -3.4rem; top: 1.5rem;
-            background: var(--white); color: var(--accent-gold); font-size: 1.5rem;
-        }
-        .date-badge { display: inline-block; background: var(--accent-gold); color: var(--white); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.85rem; margin-bottom: 1rem; }
+        .summary-text p { margin-bottom: 1rem; text-align: justify; color: #444; }
 
-        /* Contact Items */
-        .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; }
-        .contact-item { display: flex; align-items: center; gap: 10px; font-size: 1.1rem; }
-        .contact-item a { color: var(--text-dark); text-decoration: none; border-bottom: 1px solid transparent; }
-        .contact-item a:hover { border-bottom: 1px solid var(--accent-blue); color: var(--accent-blue); }
+        /* Experience Styling */
+        .experience-item {
+            margin-bottom: 3rem;
+            padding-left: 20px;
+            border-left: 3px solid var(--accent-gold);
+        }
+        .exp-title-row { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; margin-bottom: 0.5rem; }
+        .company-name { font-weight: 700; color: var(--accent-blue); font-size: 1.3rem; }
+        .date-badge { background: var(--accent-gold); color: var(--white); padding: 0.2rem 0.8rem; border-radius: 4px; font-size: 0.85rem; font-weight: 600; }
+        .location { font-style: italic; color: #666; display: block; margin-bottom: 1rem; }
+        
+        .job-list { list-style: none; }
+        .job-list li { position: relative; padding-left: 1.5rem; margin-bottom: 0.8rem; color: #444; }
+        .job-list li::before { content: "\f058"; font-family: "Font Awesome 6 Free"; font-weight: 900; position: absolute; left: 0; color: var(--accent-gold); }
+
+        /* Contact Grid */
+        .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 1rem; }
+        .contact-card { display: flex; align-items: center; gap: 15px; padding: 1rem; background: #f8fafc; border-radius: 8px; text-decoration: none; color: inherit; transition: 0.3s; }
+        .contact-card:hover { background: #eef2f3; transform: translateY(-3px); }
+        .contact-card i { font-size: 1.4rem; color: var(--accent-blue); width: 30px; text-align: center; }
+        .contact-info-text span { display: block; font-size: 0.8rem; color: #777; text-transform: uppercase; font-weight: 700; }
+        .contact-info-text p { font-weight: 600; font-size: 1rem; }
 
         @media (max-width: 768px) {
             header h1 { font-size: 2rem; }
-            nav ul { flex-direction: column; align-items: center; gap: 0.5rem; }
-            .timeline { padding-left: 1.5rem; }
-        }
-        
-        @media print {
-            nav, footer { display: none; }
-            .section { box-shadow: none; border: 1px solid #ccc; }
+            .exp-title-row { flex-direction: column; }
+            .date-badge { margin-top: 0.5rem; }
         }
     </style>
 </head>
@@ -102,20 +97,27 @@
 
     <nav>
         <ul>
-            <li><a href="#about">About</a></li>
+            <li><a href="#about">Summary</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
     <main class="container">
-        <!-- About Section -->
+        <!-- Professional Summary -->
         <section id="about" class="section">
             <div class="section-header">
-                <i class="fas fa-user-circle"></i>
+                <i class="fas fa-user-tie"></i>
                 <h3>Professional Summary</h3>
             </div>
-            <p><strong>4+ years</strong> of expertise in Quality Management Systems (QMS) within the IVD-Medical Device industry. Proficient in <strong>ISO 13485, ISO 14971, and ISO 9001</strong>. Specialist in overall QMS implementation, Quality Assurance, and regulatory documentation for IVD licensing (Manufacturing, Test, MSC, and FSC). Expert in SOP preparation, CAPA, Risk Analysis, and Temperature Mapping using tools like SmartSensors and Temprecord.</p>
+            <div class="summary-text">
+                <p>Quality Assurance professional with 4+ years of experience driving Quality Management Systems (QMS) across Medical Device and IVD domains, supporting regulated healthcare products since 2021.</p>
+                <p>Experienced in leading key QMS activities aligned with global standards including ISO 13485, ISO 14971, ISO 9001, and IMDR, ensuring compliance, audit readiness, and system robustness.</p>
+                <p>Strong exposure to regulatory support activities for Medical Device and IVD licensing, including Manufacturing License, Test License, MSC, and FSC documentation, with a clear understanding of end-to-end compliance expectations.</p>
+                <p>Proven capability in independently handling critical QA processes such as SOP lifecycle management, Change Control, CAPA, Non-Conformance handling, Risk Management, Process Validation, Internal Audits, and Training Management as per ISO 10015.</p>
+                <p><strong>Six Sigma Green Belt certified</strong> professional with a structured, data-driven approach to process improvement, quality enhancement, and operational efficiency.</p>
+                <p>Recognized for a detail-oriented, ownership-driven working style and the ability to collaborate effectively with cross-functional teams to strengthen quality culture and support business continuity.</p>
+            </div>
         </section>
 
         <!-- Experience Section -->
@@ -124,50 +126,64 @@
                 <i class="fas fa-briefcase"></i>
                 <h3>Work Experience</h3>
             </div>
-            <div class="timeline">
-                <div class="experience-item">
-                    <span class="date-badge">Jul 2022 - Mar 2025</span>
-                    <h4>Quality Management Lead</h4>
-                    <p><em>Medical Diagnostics Corp</em></p>
-                    <ul>
-                        <li>Led ISO 13485 certification audit preparation and internal audits.</li>
-                        <li>Managed CAPA and Non-Conformance reporting workflows.</li>
-                        <li>Executed equipment validation (IQ/OQ/PQ) and process validation.</li>
-                    </ul>
+
+            <div class="experience-item">
+                <div class="exp-title-row">
+                    <span class="company-name">Vantive</span>
+                    <span class="date-badge">March 2025 - Present</span>
                 </div>
+                <span class="location"><i class="fas fa-map-marker-alt"></i> Gurugram, India</span>
+                <ul class="job-list">
+                    <li>Create and manage quality documents using <strong>TcU (Product Lifecycle Management Software)</strong> to ensure compliance and accuracy in product development and regulatory processes for kidney care therapies.</li>
+                    <li>Execute change control processes in <strong>TrackWise</strong>, ensuring all product, process, or system modifications are evaluated, approved, and documented per regulatory and quality standards.</li>
+                    <li>Handle customer complaints from South Asia in TrackWise. Perform due diligence on complaints and track the complaint sample until it reaches the respective manufacturing site located across the globe.</li>
+                    <li>Initiate Non-Conformance (NC) reports in TrackWise, identifying and documenting deviations from quality standards, and facilitate resolution to maintain product and process integrity.</li>
+                    <li>Manage Corrective and Preventive Action (CAPA) processes, developing and implementing action plans to address root causes of non-conformances and prevent recurrence, enhancing quality system effectiveness.</li>
+                    <li>Support internal audits using TrackWise, documenting findings and proposing corrective actions to ensure compliance with ISO 13485 and other applicable regulatory standards.</li>
+                    <li>Coordinate product holds, identifying and isolating non-conforming products to prevent distribution and uphold quality standards for kidney care products within the India region.</li>
+                    <li>Support in preparation of aging reports for complaints across the APAC region.</li>
+                    <li>Ensure adherence to Vantive’s quality management system (QMS) and ISO 13485 through meticulous record-keeping, process monitoring, and collaboration with regional and cross-functional teams.</li>
+                    <li>Contribute to developing and updating standard operating procedures (SOPs).</li>
+                </ul>
             </div>
         </section>
 
         <!-- Contact Section -->
         <section id="contact" class="section">
             <div class="section-header">
-                <i class="fas fa-envelope-open-text"></i>
+                <i class="fas fa-address-card"></i>
                 <h3>Contact Information</h3>
             </div>
             <div class="contact-grid">
-                <div class="contact-item">
+                <a href="mailto:raghukulchaudhary@gmail.com" class="contact-card">
                     <i class="fas fa-envelope"></i>
-                    <a href="mailto:raghukul@example.com">raghukul@example.com</a>
-                </div>
-                <div class="contact-item">
+                    <div class="contact-info-text">
+                        <span>Email Address</span>
+                        <p>raghukulchaudhary@gmail.com</p>
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/raghukulchaudhary/" target="_blank" class="contact-card">
                     <i class="fab fa-linkedin"></i>
-                    <a href="https://linkedin.com" target="_blank">LinkedIn Profile</a>
-                </div>
-                <div class="contact-item">
-                    <i class="fab fa-github"></i>
-                    <a href="https://github.com" target="_blank">GitHub Portfolio</a>
-                </div>
-                <div class="contact-item">
+                    <div class="contact-info-text">
+                        <span>LinkedIn</span>
+                        <p>In/raghukulchaudhary</p>
+                    </div>
+                </a>
+                <div class="contact-card">
                     <i class="fas fa-phone"></i>
-                    <span>+91-7020067460</span>
+                    <div class="contact-info-text">
+                        <span>Mobile</span>
+                        <p>+91-702-006-7460</p>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer style="text-align: center; padding: 2rem; color: #777; font-size: 0.9rem;">
-        &copy; 2026 Raghukul Chaudhary. Built with Semantic HTML5 & CSS.
+    <footer style="text-align: center; padding: 2rem; color: #888; font-size: 0.85rem;">
+        &copy; 2026 Raghukul Chaudhary | Professional QMS Portfolio
     </footer>
 
 </body>
 </html>
+
