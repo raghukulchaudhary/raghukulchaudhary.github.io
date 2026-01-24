@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Raghukul Chaudhary - Quality Assurance Analyst Portfolio</title>
+    <title>Raghukul Chaudhary | RA | QA | QMS Expert</title>
     
     <!-- Fonts and Icons -->
     <link href="https://fonts.googleapis.com" rel="stylesheet">
@@ -38,6 +38,7 @@
             font-size: 1.2rem;
             opacity: 0.9;
             font-weight: 600;
+            letter-spacing: 0.5px;
         }
 
         nav { background: #ffffff; padding: 1rem; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
@@ -55,8 +56,8 @@
             margin-bottom: 2rem;
         }
         .section-header { display: flex; align-items: center; margin-bottom: 1.5rem; border-bottom: 2px solid #eee; padding-bottom: 0.8rem; }
-        .section-header i { font-size: 1.5rem; color: var(--accent-blue); margin-right: 12px; }
-        .section h3 { font-family: 'Roboto', sans-serif; font-size: 1.8rem; color: var(--accent-blue); }
+        .section-header i { font-size: 1.6rem; color: var(--accent-blue); margin-right: 15px; }
+        .section h3 { font-family: 'Roboto', sans-serif; font-size: 1.8rem; color: var(--accent-blue); margin: 0; }
 
         .summary-text p { margin-bottom: 1rem; text-align: justify; color: #444; }
 
@@ -65,6 +66,7 @@
             margin-bottom: 3rem;
             padding-left: 20px;
             border-left: 3px solid var(--accent-gold);
+            position: relative;
         }
         .exp-title-row { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; margin-bottom: 0.5rem; }
         .company-name { font-weight: 700; color: var(--accent-blue); font-size: 1.4rem; }
@@ -78,18 +80,20 @@
 
         /* Contact Grid */
         .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 1rem; }
-        .contact-card { display: flex; align-items: center; gap: 15px; padding: 1rem; background: #f8fafc; border-radius: 8px; text-decoration: none; color: inherit; transition: 0.3s; }
-        .contact-card:hover { background: #eef2f3; transform: translateY(-3px); }
-        .contact-card i { font-size: 1.4rem; color: var(--accent-blue); width: 30px; text-align: center; }
-        .contact-info-text span { display: block; font-size: 0.8rem; color: #777; text-transform: uppercase; font-weight: 700; }
-        .contact-info-text p { font-weight: 600; font-size: 1rem; }
+        .contact-card { display: flex; align-items: center; gap: 15px; padding: 1.2rem; background: #f8fafc; border-radius: 8px; text-decoration: none; color: inherit; transition: 0.3s; border: 1px solid #e2e8f0; }
+        .contact-card:hover { background: #eef2f3; transform: translateY(-3px); border-color: var(--accent-blue); }
+        .contact-card i { font-size: 1.5rem; color: var(--accent-blue); width: 35px; text-align: center; }
+        .contact-info-text span { display: block; font-size: 0.75rem; color: #64748b; text-transform: uppercase; font-weight: 800; margin-bottom: 2px; }
+        .contact-info-text p { font-weight: 600; font-size: 1rem; color: var(--text-dark); margin: 0; }
 
         .badge-container { display: flex; justify-content: center; margin-top: 2rem; padding-top: 2rem; border-top: 1px solid #eee; }
 
         @media (max-width: 768px) {
             header h1 { font-size: 2rem; }
+            header p { font-size: 1rem; }
             .exp-title-row { flex-direction: column; }
             .date-badge { margin-top: 0.5rem; }
+            .section { padding: 1.5rem; }
         }
     </style>
 </head>
@@ -97,7 +101,7 @@
 
     <header>
         <h1>Raghukul Chaudhary</h1>
-        <p>Quality Assurance Analyst | QMS Expert | ISO:13485 Specialists</p>
+        <p>| RA | QA | (IVD & Medical devices) / ISO:13485 / ISO:14971</p>
     </header>
 
     <nav>
@@ -112,7 +116,7 @@
         <!-- Professional Summary -->
         <section id="about" class="section">
             <div class="section-header">
-                <i class="fas fa-user-tie"></i>
+                <i class="fas fa-file-alt"></i> <!-- Updated Icon -->
                 <h3>Professional Summary</h3>
             </div>
             <div class="summary-text">
@@ -128,7 +132,7 @@
         <!-- Experience Section -->
         <section id="experience" class="section">
             <div class="section-header">
-                <i class="fas fa-briefcase"></i>
+                <i class="fas fa-history"></i> <!-- Updated Icon -->
                 <h3>Work Experience</h3>
             </div>
 
@@ -141,14 +145,12 @@
                 <span class="role-title">Quality Assurance Analyst</span>
                 <span class="location"><i class="fas fa-map-marker-alt"></i> Gurugram, India</span>
                 <ul class="job-list">
-                    <li>Create and manage quality documents using <strong>TcU (Product Lifecycle Management Software)</strong> to ensure compliance and accuracy in product development and regulatory processes.</li>
-                    <li>Execute change control processes in <strong>TrackWise</strong>, ensuring all modifications are evaluated, approved, and documented per regulatory standards.</li>
-                    <li>Handle customer complaints from South Asia in TrackWise; perform due diligence and track complaint samples globally.</li>
-                    <li>Initiate Non-Conformance (NC) reports in TrackWise and facilitate resolutions to maintain product integrity.</li>
-                    <li>Manage <strong>CAPA processes</strong>, developing and implementing action plans to address root causes and prevent recurrence.</li>
-                    <li>Support internal audits using TrackWise to ensure compliance with ISO 13485 standards.</li>
-                    <li>Coordinate product holds, isolating non-conforming products to uphold quality standards within the India region.</li>
-                    <li>Prepare aging reports for complaints across the APAC region and update SOPs as required.</li>
+                    <li>Create and manage quality documents using <strong>TcU (PLM Software)</strong> to ensure accuracy in regulatory processes.</li>
+                    <li>Execute change control processes in <strong>TrackWise</strong>, ensuring all modifications are evaluated and approved.</li>
+                    <li>Handle customer complaints from South Asia in TrackWise and perform global sample tracking.</li>
+                    <li>Initiate Non-Conformance (NC) reports and facilitate integrity-driven resolutions.</li>
+                    <li>Manage <strong>CAPA processes</strong> to address root causes and prevent recurrence.</li>
+                    <li>Support internal audits and coordinate product holds to uphold quality standards within the India region.</li>
                 </ul>
             </div>
 
@@ -158,19 +160,15 @@
                     <span class="company-name">Nulife</span>
                     <span class="date-badge">July 2022 - March 2025</span>
                 </div>
-                <span class="role-title">Quality Management Specialist</span>
+                <span class="role-title">QA Executive</span> <!-- Updated Role -->
                 <span class="location"><i class="fas fa-map-marker-alt"></i> Noida, India (2 Years, 9 months)</span>
                 <ul class="job-list">
-                    <li>Implemented and ensured compliance with the <strong>ISO 13485</strong> standard.</li>
-                    <li>Maintained complaint and nonconformance processing through records and tracking systems, including root cause analysis and corrective actions.</li>
-                    <li>Documented quality assurance activities through internal reporting and audits.</li>
-                    <li>Identified training needs and implemented actions to ensure company-wide compliance.</li>
-                    <li>Ensured all devices were calibrated according to the established schedule.</li>
-                    <li>Conducted risk assessments and implemented mitigation strategies to ensure product safety and regulatory compliance.</li>
-                    <li>Collaborated with cross-functional teams to integrate QMS processes into manufacturing workflows.</li>
-                    <li>Monitored and evaluated supplier performance to ensure raw materials meet quality specifications.</li>
-                    <li>Managed change control processes for products, processes, or systems in accordance with quality standards.</li>
-                    <li>Promptly reported problems or concerns to the Quality Assurance Head and Senior Management.</li>
+                    <li>Ensured total compliance with <strong>ISO 13485</strong> standards and internal audits.</li>
+                    <li>Processed complaints and nonconformances using root cause analysis (RCA).</li>
+                    <li>Identified training needs for company-wide compliance and managed device calibrations.</li>
+                    <li>Conducted risk assessments and implemented mitigation strategies for product safety.</li>
+                    <li>Collaborated with manufacturing teams to integrate QMS into development workflows.</li>
+                    <li>Managed change control processes and reported concerns to senior management.</li>
                 </ul>
             </div>
 
@@ -181,16 +179,12 @@
                     <span class="date-badge">March 2021 - July 2022</span>
                 </div>
                 <span class="role-title">Quality Assurance Executive</span>
-                <span class="location"><i class="fas fa-map-marker-alt"></i> Rajasthan, India (1 Year, 5 months)</span>
+                <span class="location"><i class="fas fa-map-marker-alt"></i> Rajasthan, India</span>
                 <ul class="job-list">
-                    <li>Ensured effective implementation of SOPs and other applicable regulations across all areas.</li>
-                    <li>Managed customer complaints, nonconforming cases, and change control, evaluating CAPA effectiveness.</li>
-                    <li>Oversaw the validation, qualification, and calibration of equipment and instruments for manufacturing and testing.</li>
-                    <li>Prepared, compiled, and presented <strong>Management Review Meeting (MRM) data</strong>.</li>
-                    <li>Prepared technical documents (Site Master Files and Drug Master Files) for licensing purposes.</li>
-                    <li>Assured quality at every stage of the manufacturing process and ensured compliance with national standards.</li>
-                    <li>Oversaw customer feedback and post-market surveillance of <strong>IVD products</strong>.</li>
-                    <li>Managed internal and external surveillance audits and conducted training according to the established plan.</li>
+                    <li>Implemented SOPs and managed customer feedback/post-market surveillance of IVD products.</li>
+                    <li>Oversaw validation, qualification, and calibration of manufacturing equipment.</li>
+                    <li>Prepared Technical Documents (SMF/DMF) for licensing and presented MRM data.</li>
+                    <li>Managed internal and external surveillance audits to maintain national standards.</li>
                 </ul>
             </div>
         </section>
@@ -198,34 +192,34 @@
         <!-- Contact Section -->
         <section id="contact" class="section">
             <div class="section-header">
-                <i class="fas fa-address-card"></i>
-                <h3>Contact Information</h3>
+                <i class="fas fa-id-card-alt"></i> <!-- Updated Icon -->
+                <h3>Contact & Profile</h3>
             </div>
             <div class="contact-grid">
                 <a href="mailto:raghukulchaudhary@gmail.com" class="contact-card">
-                    <i class="fas fa-envelope"></i>
+                    <i class="fas fa-paper-plane"></i> <!-- Professional Icon -->
                     <div class="contact-info-text">
-                        <span>Email Address</span>
+                        <span>Email</span>
                         <p>raghukulchaudhary@gmail.com</p>
                     </div>
                 </a>
                 <a href="https://www.linkedin.com" target="_blank" class="contact-card">
-                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-linkedin-in"></i> <!-- Professional Icon -->
                     <div class="contact-info-text">
-                        <span>LinkedIn Profile</span>
+                        <span>LinkedIn</span>
                         <p>In/raghukulchaudhary</p>
                     </div>
                 </a>
                 <div class="contact-card">
-                    <i class="fas fa-phone"></i>
+                    <i class="fas fa-mobile-alt"></i> <!-- Professional Icon -->
                     <div class="contact-info-text">
-                        <span>Mobile Number</span>
+                        <span>Phone</span>
                         <p>+91-702-006-7460</p>
                     </div>
                 </div>
             </div>
 
-            <!-- LinkedIn Badge Integration -->
+            <!-- LinkedIn Badge -->
             <div class="badge-container">
                 <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="raghukulchaudhary" data-version="v1">
                     <a class="badge-base__link LI-simple-link" href="https://in.linkedin.com">Raghukul Chaudhary</a>
@@ -235,7 +229,7 @@
     </main>
 
     <footer style="text-align: center; padding: 2rem; color: #888; font-size: 0.85rem;">
-        &copy; 2026 Raghukul Chaudhary | Quality Assurance Professional Portfolio
+        &copy; 2026 Raghukul Chaudhary | RA & QA Professional Portfolio
     </footer>
 
 </body>
