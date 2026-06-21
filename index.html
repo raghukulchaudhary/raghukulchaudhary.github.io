@@ -237,25 +237,27 @@
     #experience { background: var(--bg); }
     .timeline { display: flex; flex-direction: column; gap: 0; }
     .tl-item {
-      display: grid; grid-template-columns: 130px 1fr;
-      gap: 2rem; position: relative; padding-bottom: 2.5rem;
+      display: grid; grid-template-columns: 110px 32px 1fr;
+      gap: 0; position: relative; padding-bottom: 2.5rem;
     }
     .tl-item:not(:last-child)::before {
       content: '';
-      position: absolute; left: 121px; top: 16px; bottom: 0;
+      position: absolute; left: 125px; top: 22px; bottom: 0;
       width: 2px;
       background: linear-gradient(to bottom, var(--purple), transparent);
     }
     .tl-date {
       font-size: 0.76rem; font-weight: 600; color: var(--muted);
-      text-align: right; line-height: 1.5; padding-top: 0.15rem;
+      text-align: right; line-height: 1.5; padding-top: 0.2rem;
+      padding-right: 0.8rem;
     }
     .tl-dot {
-      position: absolute; left: 114px; top: 8px;
       width: 16px; height: 16px; border-radius: 50%;
       border: 2px solid var(--violet);
       background: var(--bg);
       box-shadow: 0 0 10px var(--glow);
+      margin-top: 0.25rem;
+      justify-self: center;
     }
     .tl-card {
       background: var(--surface);
@@ -371,7 +373,7 @@
       .about-grid { grid-template-columns: 1fr; }
       .tl-item { grid-template-columns: 1fr; }
       .tl-item::before, .tl-dot { display: none; }
-      .tl-date { text-align: left; }
+      .tl-date { text-align: left; padding-right: 0; padding-bottom: 0.4rem; }
       .nav-links { display: none; }
     }
     @media (prefers-reduced-motion: reduce) {
@@ -467,12 +469,16 @@
           <div class="tl-role">Quality Assurance Analyst</div>
           <div class="tl-loc">Gurugram, India</div>
           <ul class="tl-list">
-            <li>Create and manage quality documents using <strong>TcU (PLM Software)</strong> for regulatory processes.</li>
-            <li>Execute change control workflows in <strong>TrackWise</strong>, ensuring all modifications are evaluated and approved.</li>
-            <li>Handle customer complaints from South Asia and perform global sample tracking.</li>
-            <li>Initiate Non-Conformance (NC) reports and facilitate integrity-driven resolutions.</li>
-            <li>Manage <strong>CAPA processes</strong> to address root causes and prevent recurrence.</li>
-            <li>Support internal audits and coordinate product holds within the India region.</li>
+            <li>Create and manage quality documents using <strong>TcU (PLM Software)</strong> to ensure compliance and accuracy in product development and regulatory processes for kidney care therapies.</li>
+            <li>Execute change control processes in <strong>TrackWise</strong>, ensuring all product, process, or system modifications are evaluated, approved, and documented per regulatory and quality standards.</li>
+            <li>Handle customer complaints from <strong>South Asia</strong> in TrackWise — perform due diligence and track complaint samples until they reach the respective manufacturing site across the globe.</li>
+            <li>Initiate <strong>Non-Conformance (NC)</strong> reports in TrackWise, identifying deviations from quality standards and facilitating resolution to maintain product and process integrity.</li>
+            <li>Manage <strong>CAPA processes</strong> — develop and implement action plans to address root causes of non-conformances and prevent recurrence, enhancing quality system effectiveness.</li>
+            <li>Support internal audits using TrackWise, documenting findings and proposing corrective actions to ensure compliance with <strong>ISO 13485</strong> and applicable regulatory standards.</li>
+            <li>Coordinate <strong>product holds</strong> — identify and isolate non-conforming products to prevent distribution and uphold quality standards within the India region.</li>
+            <li>Support preparation of <strong>aging reports</strong> for complaints across the APAC region.</li>
+            <li>Ensure adherence to Vantive's QMS and ISO 13485 through meticulous record-keeping, process monitoring, and collaboration with regional and cross-functional teams.</li>
+            <li>Contribute to developing and updating <strong>Standard Operating Procedures (SOPs)</strong>.</li>
           </ul>
         </div>
       </div>
@@ -485,11 +491,18 @@
           <div class="tl-role">QA Executive</div>
           <div class="tl-loc">Noida, India · 2 Years 9 Months</div>
           <ul class="tl-list">
-            <li>Ensured total compliance with <strong>ISO 13485</strong> standards and internal audit requirements.</li>
-            <li>Processed complaints and nonconformances using root cause analysis (RCA).</li>
-            <li>Identified training needs for company-wide compliance and managed device calibrations.</li>
-            <li>Conducted risk assessments and implemented mitigation strategies for product safety.</li>
-            <li>Managed change control processes and collaborated with manufacturing teams on QMS integration.</li>
+            <li>Implemented and ensured compliance with the <strong>ISO 13485</strong> standard across all quality processes.</li>
+            <li>Maintained complaint and nonconformance processing through records and tracking systems, including <strong>root cause analysis</strong> and corrective actions.</li>
+            <li>Documented quality assurance activities through internal reporting and audits.</li>
+            <li>Identified training needs and implemented actions to ensure <strong>company-wide compliance</strong>; ensured all devices were calibrated per established schedule.</li>
+            <li>Communicated inspection results, proposed corrective actions, and wrote reports documenting product deficiencies and errors.</li>
+            <li>Conducted <strong>risk assessments</strong> and implemented mitigation strategies to ensure product safety and regulatory compliance.</li>
+            <li>Collaborated with cross-functional teams to integrate QMS into product development and manufacturing workflows.</li>
+            <li>Monitored and evaluated <strong>supplier performance</strong> to ensure raw materials and components meet quality specifications.</li>
+            <li>Developed and updated <strong>SOPs</strong> to reflect best practices and maintain consistency in quality processes.</li>
+            <li>Analyzed quality data trends to identify opportunities for <strong>continuous improvement</strong> and process optimization.</li>
+            <li>Managed and documented <strong>change control processes</strong> ensuring all modifications were evaluated, approved, and implemented per quality and regulatory standards.</li>
+            <li>Promptly reported problems or concerns to Quality Assurance Head and senior management.</li>
           </ul>
         </div>
       </div>
@@ -502,10 +515,16 @@
           <div class="tl-role">Quality Assurance Executive</div>
           <div class="tl-loc">Rajasthan, India</div>
           <ul class="tl-list">
-            <li>Implemented SOPs and managed customer feedback and post-market surveillance of IVD products.</li>
-            <li>Managed complaints, nonconforming cases, change control, and CAPA effectiveness evaluation.</li>
-            <li>Prepared Technical Documents (SMF/DMF) for licensing and presented MRM data.</li>
-            <li>Managed internal and external surveillance audits to maintain national standards.</li>
+            <li>Ensured effective implementation of <strong>SOPs</strong> and applicable regulations across all areas.</li>
+            <li>Managed customer complaints, nonconforming cases, and change control, including evaluating the effectiveness of <strong>CAPA</strong>.</li>
+            <li>Ensured risk management was adequately implemented across all key processes.</li>
+            <li>Oversaw validation, qualification, and <strong>calibration</strong> of equipment and instruments used for manufacturing, inspection, measuring, monitoring, and testing.</li>
+            <li>Prepared, compiled, and presented <strong>Management Review Meeting (MRM)</strong> data.</li>
+            <li>Prepared technical documents including <strong>Site Master Files (SMF)</strong> and Drug Master Files (DMF) for licensing purposes.</li>
+            <li>Assured quality at every stage of the manufacturing process and ensured compliance with national standards.</li>
+            <li>Oversaw customer feedback and <strong>post-market surveillance</strong> of IVD products.</li>
+            <li>Managed internal and external <strong>surveillance audits</strong>.</li>
+            <li>Ensured training was conducted according to the established training plan.</li>
           </ul>
         </div>
       </div>
@@ -520,31 +539,90 @@
     <p class="sec-sub">Core competencies built across four years in regulated medical device environments.</p>
     <div class="skills-grid">
       <div class="sg fi">
-        <div class="sg-title"><span class="sg-dot"></span>Quality Systems</div>
+        <div class="sg-title"><span class="sg-dot"></span>Quality Management Systems</div>
         <div class="pills">
-          <span class="pill">ISO 13485</span><span class="pill">ISO 14971</span><span class="pill">ISO 9001</span>
-          <span class="pill">QMS Design</span><span class="pill">SOP Management</span><span class="pill">Process Validation</span>
+          <span class="pill">ISO 13485</span>
+          <span class="pill">ISO 14971</span>
+          <span class="pill">ISO 9001</span>
+          <span class="pill">ISO 10015</span>
+          <span class="pill">QMS Design &amp; Implementation</span>
+          <span class="pill">SOP Lifecycle Management</span>
+          <span class="pill">Document Control</span>
+          <span class="pill">Management Review (MRM)</span>
+          <span class="pill">Record Keeping</span>
+          <span class="pill">Process Monitoring</span>
         </div>
       </div>
       <div class="sg fi">
-        <div class="sg-title"><span class="sg-dot"></span>QA Processes</div>
+        <div class="sg-title"><span class="sg-dot"></span>QA Core Processes</div>
         <div class="pills">
-          <span class="pill">CAPA</span><span class="pill">Change Control</span><span class="pill">NCR Handling</span>
-          <span class="pill">Risk Management</span><span class="pill">Internal Audits</span><span class="pill">Training Management</span>
+          <span class="pill">CAPA</span>
+          <span class="pill">Change Control</span>
+          <span class="pill">Non-Conformance (NCR)</span>
+          <span class="pill">Root Cause Analysis</span>
+          <span class="pill">Risk Management</span>
+          <span class="pill">Process Validation</span>
+          <span class="pill">Equipment Qualification</span>
+          <span class="pill">Device Calibration</span>
+          <span class="pill">Internal Audits</span>
+          <span class="pill">Supplier Audits</span>
+          <span class="pill">Surveillance Audits</span>
+          <span class="pill">Post-Market Surveillance</span>
+          <span class="pill">Customer Complaint Handling</span>
+          <span class="pill">Aging Reports</span>
+          <span class="pill">Complaint Trend Analysis</span>
+          <span class="pill">Supplier Performance Monitoring</span>
+          <span class="pill">Continuous Improvement</span>
         </div>
       </div>
       <div class="sg fi">
         <div class="sg-title"><span class="sg-dot"></span>Regulatory Affairs</div>
         <div class="pills">
-          <span class="pill">MDR 2017</span><span class="pill">MvPI</span><span class="pill">IMDR</span>
-          <span class="pill">Manufacturing License</span><span class="pill">FSC / MSC</span><span class="pill">SMF / DMF</span>
+          <span class="pill">Medical Devices Rules 2017</span>
+          <span class="pill">MvPI</span>
+          <span class="pill">IMDR</span>
+          <span class="pill">Manufacturing License</span>
+          <span class="pill">Test License</span>
+          <span class="pill">FSC / MSC</span>
+          <span class="pill">SMF / DMF</span>
+          <span class="pill">Technical Documentation</span>
+          <span class="pill">Vigilance Reporting</span>
+          <span class="pill">Labelling Compliance</span>
+        </div>
+      </div>
+      <div class="sg fi">
+        <div class="sg-title"><span class="sg-dot"></span>Product &amp; Manufacturing QA</div>
+        <div class="pills">
+          <span class="pill">IVD Product QA</span>
+          <span class="pill">CRRT Consumables</span>
+          <span class="pill">Peritoneal Dialysis (PD)</span>
+          <span class="pill">Kidney Care Therapies</span>
+          <span class="pill">Incoming Inspection</span>
+          <span class="pill">Batch Release</span>
+          <span class="pill">Product Holds &amp; Isolation</span>
+          <span class="pill">Manufacturing QA Integration</span>
+          <span class="pill">Sterility Assurance</span>
         </div>
       </div>
       <div class="sg fi">
         <div class="sg-title"><span class="sg-dot"></span>Tools &amp; Software</div>
         <div class="pills">
-          <span class="pill">TrackWise</span><span class="pill">TcU (PLM)</span><span class="pill">Microsoft Excel</span>
-          <span class="pill">Word / PowerPoint</span><span class="pill">Six Sigma (DMAIC)</span>
+          <span class="pill">TrackWise</span>
+          <span class="pill">TcU / PLM</span>
+          <span class="pill">Microsoft Excel</span>
+          <span class="pill">Word &amp; PowerPoint</span>
+          <span class="pill">Six Sigma (DMAIC)</span>
+          <span class="pill">Data Analysis &amp; Reporting</span>
+        </div>
+      </div>
+      <div class="sg fi">
+        <div class="sg-title"><span class="sg-dot"></span>Certifications &amp; Training</div>
+        <div class="pills">
+          <span class="pill">Six Sigma Green Belt</span>
+          <span class="pill">ISO 13485 Lead Auditor (Training)</span>
+          <span class="pill">ISO 14971 Risk Management</span>
+          <span class="pill">MDR 2017 Compliance</span>
+          <span class="pill">Training Management &mdash; ISO 10015</span>
         </div>
       </div>
     </div>
@@ -559,9 +637,34 @@
       <div class="edu-card fi">
         <div class="edu-icon">🎓</div>
         <div>
-          <div class="edu-deg">B.Sc. Life Sciences</div>
-          <div class="edu-sch">Update with your university name</div>
-          <span class="edu-badge">Graduation Year</span>
+          <div class="edu-deg">Master's in Biotechnology</div>
+          <div class="edu-sch">Amity University, Gurugram &nbsp;·&nbsp; 2018–2020</div>
+          <div style="font-size:0.78rem; color:var(--muted); margin: 0.4rem 0 0.5rem; line-height:1.6;">
+            Specialization in Fermentation Technology &amp; Downstream Processing · CGPA 8.30 · Grade A · 100 Credits
+          </div>
+          <span class="edu-badge">M.Sc.</span>
+        </div>
+      </div>
+      <div class="edu-card fi">
+        <div class="edu-icon">🔬</div>
+        <div>
+          <div class="edu-deg">Bachelor's in Biotechnology</div>
+          <div class="edu-sch">Lovely Professional University, Jalandhar, Punjab &nbsp;·&nbsp; 2014–2017</div>
+          <div style="font-size:0.78rem; color:var(--muted); margin: 0.4rem 0 0.5rem; line-height:1.6;">
+            Specialization in Molecular Biology &amp; Computer Aided Drug Design · CGPA 7.31 · Grade B+ · 124 Credits
+          </div>
+          <span class="edu-badge">B.Sc.</span>
+        </div>
+      </div>
+      <div class="edu-card fi">
+        <div class="edu-icon">📚</div>
+        <div>
+          <div class="edu-deg">10+2 — Science Stream</div>
+          <div class="edu-sch">B.P.K.I.H.S</div>
+          <div style="font-size:0.78rem; color:var(--muted); margin: 0.4rem 0 0.5rem; line-height:1.6;">
+            Biology · Physics · Chemistry · English · Physical Education
+          </div>
+          <span class="edu-badge">CBSE</span>
         </div>
       </div>
       <div class="edu-card fi">
@@ -569,15 +672,10 @@
         <div>
           <div class="edu-deg">Six Sigma Green Belt</div>
           <div class="edu-sch">Process Improvement &amp; Quality Management</div>
+          <div style="font-size:0.78rem; color:var(--muted); margin: 0.4rem 0 0.5rem; line-height:1.6;">
+            Data-driven quality enhancement and operational efficiency
+          </div>
           <span class="edu-badge">Certified</span>
-        </div>
-      </div>
-      <div class="edu-card fi">
-        <div class="edu-icon">📘</div>
-        <div>
-          <div class="edu-deg">ISO 13485 &amp; 14971</div>
-          <div class="edu-sch">Quality Management Systems for Medical Devices</div>
-          <span class="edu-badge">Training</span>
         </div>
       </div>
     </div>
