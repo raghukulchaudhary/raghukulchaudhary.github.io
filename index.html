@@ -264,9 +264,35 @@
       border: 1px solid var(--border);
       border-radius: 12px; padding: 1.5rem;
     }
+    .tl-logo {
+      width: 48px; height: 48px; object-fit: contain;
+      border-radius: 8px;
+      background: #fff;
+      padding: 4px;
+      border: 1px solid var(--border);
+      flex-shrink: 0;
+    }
+    .tl-header {
+      display: flex; align-items: center; gap: 0.9rem; margin-bottom: 0.8rem;
+    }
+    .tl-header-text { display: flex; flex-direction: column; }
+    .edu-logo {
+      width: 44px; height: 44px; object-fit: contain;
+      border-radius: 8px; background: #fff;
+      padding: 3px;
+      border: 1px solid var(--border);
+      flex-shrink: 0;
+    }
+    .ksu-logo {
+      width: 130px; height: 44px; object-fit: contain;
+      border-radius: 8px; background: #fff;
+      padding: 6px;
+      border: 1px solid var(--border);
+      flex-shrink: 0;
+    }
     .tl-company {
       font-family: 'Plus Jakarta Sans', sans-serif;
-      font-size: 1.1rem; font-weight: 800; color: var(--white); margin-bottom: 0.2rem;
+      font-size: 1.1rem; font-weight: 800; color: var(--white); margin-bottom: 0.1rem;
     }
     .tl-role { font-size: 0.83rem; color: var(--violet); font-weight: 600; margin-bottom: 0.1rem; }
     .tl-loc { font-size: 0.76rem; color: var(--muted); margin-bottom: 1rem; }
@@ -391,6 +417,7 @@
       <li><a href="#experience">Experience</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#education">Education</a></li>
+      <li><a href="#certifications">Certifications</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
     <a href="mailto:raghukulchaudhary@gmail.com" class="nav-cta">Hire Me</a>
@@ -414,6 +441,7 @@
       </div>
       <div class="hero-btns">
         <a href="#experience" class="btn-main">View Experience</a>
+        <a href="resume.pdf" download="Raghukul_Chaudhary_Resume.pdf" class="btn-ghost">⬇ Download Resume</a>
         <a href="#contact" class="btn-ghost">Get in Touch</a>
       </div>
     </div>
@@ -465,9 +493,14 @@
         <div class="tl-date">Mar 2025<br>Present</div>
         <div class="tl-dot"></div>
         <div class="tl-card">
-          <div class="tl-company">Vantive Healthcare</div>
-          <div class="tl-role">Quality Assurance Analyst</div>
-          <div class="tl-loc">Gurugram, India</div>
+        <div class="tl-header">
+            <img src="vantive.png" alt="Vantive" class="tl-logo" />
+            <div class="tl-header-text">
+              <div class="tl-company">Vantive Healthcare</div>
+              <div class="tl-role">Quality Assurance Analyst</div>
+              <div class="tl-loc">Gurugram, India</div>
+            </div>
+          </div>
           <ul class="tl-list">
             <li>Create and manage quality documents using <strong>TcU (PLM Software)</strong> to ensure compliance and accuracy in product development and regulatory processes for kidney care therapies.</li>
             <li>Execute change control processes in <strong>TrackWise</strong>, ensuring all product, process, or system modifications are evaluated, approved, and documented per regulatory and quality standards.</li>
@@ -487,9 +520,14 @@
         <div class="tl-date">Jul 2022<br>Mar 2025</div>
         <div class="tl-dot"></div>
         <div class="tl-card">
-          <div class="tl-company">Nulife</div>
-          <div class="tl-role">QA Executive</div>
-          <div class="tl-loc">Noida, India · 2 Years 9 Months</div>
+        <div class="tl-header">
+            <img src="nulife.png" alt="Nulife" class="tl-logo" />
+            <div class="tl-header-text">
+              <div class="tl-company">Nulife</div>
+              <div class="tl-role">QA Executive</div>
+              <div class="tl-loc">Noida, India · 2 Years 9 Months</div>
+            </div>
+          </div>
           <ul class="tl-list">
             <li>Implemented and ensured compliance with the <strong>ISO 13485</strong> standard across all quality processes.</li>
             <li>Maintained complaint and nonconformance processing through records and tracking systems, including <strong>root cause analysis</strong> and corrective actions.</li>
@@ -511,9 +549,14 @@
         <div class="tl-date">Mar 2021<br>Jul 2022</div>
         <div class="tl-dot"></div>
         <div class="tl-card">
-          <div class="tl-company">Astam Diagnostics Pvt. Ltd.</div>
-          <div class="tl-role">Quality Assurance Executive</div>
-          <div class="tl-loc">Rajasthan, India</div>
+        <div class="tl-header">
+            <img src="astam.png" alt="Astam Diagnostics" class="tl-logo" />
+            <div class="tl-header-text">
+              <div class="tl-company">Astam Diagnostics Pvt. Ltd.</div>
+              <div class="tl-role">Quality Assurance Executive</div>
+              <div class="tl-loc">Rajasthan, India</div>
+            </div>
+          </div>
           <ul class="tl-list">
             <li>Ensured effective implementation of <strong>SOPs</strong> and applicable regulations across all areas.</li>
             <li>Managed customer complaints, nonconforming cases, and change control, including evaluating the effectiveness of <strong>CAPA</strong>.</li>
@@ -635,7 +678,7 @@
     <p class="sec-sub">The foundation supporting my work in quality and regulatory science.</p>
     <div class="edu-grid">
       <div class="edu-card fi">
-        <div class="edu-icon">🎓</div>
+        <img src="amity.png" alt="Amity University" class="edu-logo" />
         <div>
           <div class="edu-deg">Master's in Biotechnology</div>
           <div class="edu-sch">Amity University, Gurugram &nbsp;·&nbsp; 2018–2020</div>
@@ -646,7 +689,7 @@
         </div>
       </div>
       <div class="edu-card fi">
-        <div class="edu-icon">🔬</div>
+        <img src="LPU.png" alt="Lovely Professional University" class="edu-logo" />
         <div>
           <div class="edu-deg">Bachelor's in Biotechnology</div>
           <div class="edu-sch">Lovely Professional University, Jalandhar, Punjab &nbsp;·&nbsp; 2014–2017</div>
@@ -657,23 +700,32 @@
         </div>
       </div>
       <div class="edu-card fi">
-        <div class="edu-icon">📚</div>
+        <img src="DPS.png" alt="B.P.K.I.H.S" class="edu-logo" />
         <div>
-          <div class="edu-deg">10+2 — Science Stream</div>
-          <div class="edu-sch">B.P.K.I.H.S</div>
+          <div class="edu-deg">Intermediate — Science Stream</div>
+          <div class="edu-sch">Delhi Public School, B.P.K.I.H.S &nbsp;·&nbsp; 2012–2014</div>
           <div style="font-size:0.78rem; color:var(--muted); margin: 0.4rem 0 0.5rem; line-height:1.6;">
             Biology · Physics · Chemistry · English · Physical Education
           </div>
           <span class="edu-badge">CBSE</span>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications" style="background: var(--bg);">
+    <div class="sec-eye">Certifications &amp; Licences</div>
+    <h2>Credentials</h2>
+    <p class="sec-sub">Professional certifications and licences earned across quality, regulatory, and technical domains. More being added soon.</p>
+    <div class="edu-grid">
       <div class="edu-card fi">
         <div class="edu-icon">📋</div>
         <div>
           <div class="edu-deg">Six Sigma Green Belt</div>
-          <div class="edu-sch">Process Improvement &amp; Quality Management</div>
+          <div class="edu-sch">Kennesaw State University</div>
           <div style="font-size:0.78rem; color:var(--muted); margin: 0.4rem 0 0.5rem; line-height:1.6;">
-            Data-driven quality enhancement and operational efficiency
+            DMAIC · Process Improvement · Quality Management
           </div>
           <span class="edu-badge">Certified</span>
         </div>
