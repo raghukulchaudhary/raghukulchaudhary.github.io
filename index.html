@@ -348,6 +348,21 @@
       border: 1px solid var(--border);
       display: flex; align-items: center; justify-content: center; font-size: 1.2rem;
     }
+    .cert-btn {
+      display: inline-block;
+      font-size: 0.76rem; font-weight: 600;
+      padding: 0.35rem 0.9rem; border-radius: 6px;
+      background: rgba(124,58,237,0.12);
+      border: 1px solid rgba(124,58,237,0.3);
+      color: var(--violet);
+      text-decoration: none;
+      transition: background 0.2s, color 0.2s;
+      align-self: flex-start;
+    }
+    .cert-btn:hover {
+      background: var(--purple);
+      color: #fff;
+    }
     .edu-deg { font-weight: 700; font-size: 0.93rem; color: var(--white); margin-bottom: 0.2rem; }
     .edu-sch { font-size: 0.8rem; color: var(--muted); margin-bottom: 0.5rem; }
     .edu-badge {
@@ -717,19 +732,117 @@
   <section id="certifications" style="background: var(--bg);">
     <div class="sec-eye">Certifications &amp; Licences</div>
     <h2>Credentials</h2>
-    <p class="sec-sub">Professional certifications and licences earned across quality, regulatory, and technical domains. More being added soon.</p>
-    <div class="edu-grid">
-      <div class="edu-card fi">
-        <div class="edu-icon">📋</div>
-        <div>
-          <div class="edu-deg">Six Sigma Green Belt</div>
-          <div class="edu-sch">Kennesaw State University</div>
-          <div style="font-size:0.78rem; color:var(--muted); margin: 0.4rem 0 0.5rem; line-height:1.6;">
-            DMAIC · Process Improvement · Quality Management
+    <p class="sec-sub">Professional certifications and licences earned across quality, regulatory, cybersecurity, and technical domains.</p>
+    <div style="display:grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap:1.2rem;">
+
+      <div class="edu-card fi" style="flex-direction:column; gap:0.8rem;">
+        <div style="display:flex; align-items:center; gap:0.8rem;">
+          <div class="edu-icon">🎓</div>
+          <div>
+            <div class="edu-deg">Six Sigma Green Belt (CSSGB)</div>
+            <div class="edu-sch">Kennesaw State University</div>
           </div>
-          <span class="edu-badge">Certified</span>
         </div>
+        <div style="font-size:0.78rem; color:var(--muted); line-height:1.6;">Issued Dec 2025 <br></div>
+        <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/7FR4UGD1QQEU" target="_blank" class="cert-btn">View Certificate ↗</a>
       </div>
+
+      <div class="edu-card fi" style="flex-direction:column; gap:0.8rem;">
+        <div style="display:flex; align-items:center; gap:0.8rem;">
+          <div class="edu-icon">🔒</div>
+          <div>
+            <div class="edu-deg">ISO/IEC 27001:2022 Lead Auditor</div>
+            <div class="edu-sch">Mastermind Assurance</div>
+          </div>
+        </div>
+        <div style="font-size:0.78rem; color:var(--muted); line-height:1.6;">Issued Dec 2025 &nbsp;·&nbsp; Expires Dec 2028 <br></div>
+        <a href="https://learn.mastermindassurance.com/certificates/hfw8nckfpf" target="_blank" class="cert-btn">View Certificate ↗</a>
+      </div>
+
+      <div class="edu-card fi" style="flex-direction:column; gap:0.8rem;">
+        <div style="display:flex; align-items:center; gap:0.8rem;">
+          <div class="edu-icon">🤖</div>
+          <div>
+            <div class="edu-deg">ISO/IEC 42001:2023 Lead Auditor</div>
+            <div class="edu-sch">Mastermind Assurance</div>
+          </div>
+        </div>
+        <div style="font-size:0.78rem; color:var(--muted); line-height:1.6;">Issued Dec 2025 &nbsp;·&nbsp; Expires Dec 2028 <br></div>
+        <a href="https://learn.mastermindassurance.com/certificates/5euth6md34" target="_blank" class="cert-btn">View Certificate ↗</a>
+      </div>
+
+      <div class="edu-card fi" style="flex-direction:column; gap:0.8rem;">
+        <div style="display:flex; align-items:center; gap:0.8rem;">
+          <div class="edu-icon">🛡️</div>
+          <div>
+            <div class="edu-deg">ISO/IEC 27701:2025 Lead Auditor</div>
+            <div class="edu-sch">Mastermind Assurance</div>
+          </div>
+        </div>
+        <div style="font-size:0.78rem; color:var(--muted); line-height:1.6;">Issued Jun 2026 &nbsp;·&nbsp; Expires Jun 2029 </div>
+        <a href="https://www.credly.com/badges/b2c42adf-5082-4d5c-96e0-98c9234943e1/linked_in_profile" target="_blank" class="cert-btn">View Certificate ↗</a>
+      </div>
+
+      <div class="edu-card fi" style="flex-direction:column; gap:0.8rem;">
+        <div style="display:flex; align-items:center; gap:0.8rem;">
+          <div class="edu-icon">🌐</div>
+          <div>
+            <div class="edu-deg">CISCO Endpoint Security</div>
+            <div class="edu-sch">Cisco</div>
+          </div>
+        </div>
+        <div style="font-size:0.78rem; color:var(--muted); line-height:1.6;">Issued Jan 2026</div>
+        <a href="https://www.credly.com/badges/649fd4cd-51a8-475a-9a6c-532c3d610846/linked_in_profile" target="_blank" class="cert-btn">View Certificate ↗</a>
+      </div>
+
+      <div class="edu-card fi" style="flex-direction:column; gap:0.8rem;">
+        <div style="display:flex; align-items:center; gap:0.8rem;">
+          <div class="edu-icon">⚕️</div>
+          <div>
+            <div class="edu-deg">ISO 14971:2019 Risk Management</div>
+            <div class="edu-sch">Udemy</div>
+          </div>
+        </div>
+        <div style="font-size:0.78rem; color:var(--muted); line-height:1.6;">Issued May 2025 </div>
+        <a href="https://www.udemy.com/certificate/UC-084b32c8-265f-4868-b3e2-141eb1973b1c/" target="_blank" class="cert-btn">View Certificate ↗</a>
+      </div>
+
+      <div class="edu-card fi" style="flex-direction:column; gap:0.8rem;">
+        <div style="display:flex; align-items:center; gap:0.8rem;">
+          <div class="edu-icon">📋</div>
+          <div>
+            <div class="edu-deg">ISO 13485:2016 Medical Devices QMS</div>
+            <div class="edu-sch">Udemy</div>
+          </div>
+        </div>
+        <div style="font-size:0.78rem; color:var(--muted); line-height:1.6;">Issued May 2025 </div>
+        <a href="https://www.udemy.com/certificate/UC-4fc3422a-574c-487b-9b8c-f36efad785a4/" target="_blank" class="cert-btn">View Certificate ↗</a>
+      </div>
+
+      <div class="edu-card fi" style="flex-direction:column; gap:0.8rem;">
+        <div style="display:flex; align-items:center; gap:0.8rem;">
+          <div class="edu-icon">📊</div>
+          <div>
+            <div class="edu-deg">Career Essentials in Data Analysis</div>
+            <div class="edu-sch">Microsoft &amp; LinkedIn</div>
+          </div>
+        </div>
+        <div style="font-size:0.78rem; color:var(--muted); line-height:1.6;">Issued Apr 2025</div>
+        <a href="https://www.linkedin.com/learning/certificates/b8cca4a5c4d7f1978c10f9da64ca46de5e0e389797b797f05eaaf432256051a4" target="_blank" class="cert-btn">View Certificate ↗</a>
+      </div>
+
+      <div class="edu-card fi" style="flex-direction:column; gap:0.8rem;">
+        <div style="display:flex; align-items:center; gap:0.8rem;">
+          <div class="edu-icon">🔐</div>
+          <div>
+            <div class="edu-deg">Career Essentials in Cybersecurity</div>
+            <div class="edu-sch">Microsoft &amp; LinkedIn</div>
+          </div>
+        </div>
+        <div style="font-size:0.78rem; color:var(--muted); line-height:1.6;">Issued Apr 2025</div>
+        <a href="https://www.linkedin.com/learning/certificates/342e33e92da2e6450b449206996c63b258901d8ee4e49104182a6636feb80137" target="_blank" class="cert-btn">View Certificate ↗</a>
+      </div>
+
     </div>
   </section>
 
